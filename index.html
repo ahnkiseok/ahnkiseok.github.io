@@ -38,6 +38,24 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 
 	
    </header>
+
+
+	
+    <script>
+        var videos = ["https://www.youtube.com/embed/videoseries?list=PLscC141oNgAtWOZnQil-3RIgjTwbl6QHs", "https://www.youtube.com/embed/videoseries?list=PLscC141oNgAsmiabfvalPYPc0121Op7iK"];
+        window.onload = function () {
+            var playerDiv = document.getElementById("random_player");
+            var player = document.createElement("IFRAME");
+            var randomVideoUrl = videos[Math.floor(Math.random() * videos.length)];
+            player.setAttribute('width', '560');
+            player.setAttribute('height', '315');
+            player.setAttribute('src', randomVideoUrl);
+            playerDiv.appendChild(player);
+	    player.setAttribute('autoplay', '1');
+        };
+    </script>
+	
+	
 	
 	
 <!-- About Section -->
@@ -143,9 +161,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 	
 </br>
 
-<div style="text-align:center">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLscC141oNgAtWOZnQil-3RIgjTwbl6QHs&autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-</div>
+<div id="random_player" style="text-align:center" />
 
 </br>
 
