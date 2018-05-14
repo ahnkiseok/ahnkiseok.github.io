@@ -60,8 +60,8 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
             var playerDiv = document.getElementById("random_player");
             var player = document.createElement("IFRAME");
             var randomVideoUrl = videos[Math.floor(Math.random() * videos.length)];
-            player.setAttribute('width', '640');
-	    player.setAttribute('height', '480');
+            player.setAttribute('width', '480');
+	    player.setAttribute('height', '320');
             player.setAttribute('src', randomVideoUrl);
 	    player.setAttribute('autoplay', '1');
 	    player.setAttribute('shuffle', '1');
