@@ -48,7 +48,6 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
             var player = document.createElement("IFRAME");
             var randomVideoUrl = videos[Math.floor(Math.random() * videos.length)];
             player.setAttribute('width', '640');
-            player.setAttribute('height', '480');
             player.setAttribute('src', randomVideoUrl);
 	    player.setAttribute('autoplay', '1');
 	    player.setAttribute('shuffle', '1');
@@ -56,7 +55,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 	};
     </script>
 	
-	
+<!-- player.setAttribute('height', '480'); -->
 	
 	
 <!-- About Section -->
