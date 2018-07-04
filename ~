@@ -14,17 +14,11 @@ layout: default
     line-height: 1;
     letter-spacing: -1px;
   }
-  body {
-    background-color: black;
-  } 
-
-  div {
-    color: white;
-  } 
 </style>
 
-<div class="container">
+<div class="container" style="height:50px; background-color: ivory">
   <h1>404</h1>
+
   <p><strong>Page not found :(</strong></p>
   <p>The requested page could not be found.</p>
 </div>
