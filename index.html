@@ -76,7 +76,22 @@
 	};
     </script>
 
-
+    <script>
+        var videos = ["https://www.youtube.com/embed/videoseries?list=PLscC141oNgAtAku-v8dGPH16GOH0FIs1o"];
+        window.onload = function () {
+            var playerDiv = document.getElementById("random_player2");
+            var player = document.createElement("IFRAME");
+            var randomVideoUrl = videos[Math.floor(Math.random() * videos.length)];
+            player.setAttribute('width', '320');
+	    player.setAttribute('height', '240');
+            player.setAttribute('src', randomVideoUrl);
+	    player.setAttribute('autoplay', '0');
+	    player.setAttribute('shuffle', '1');
+	    player.setAttribute('frameborder', '0');
+	    player.setAttribute('allow', 'autoplay');
+	    playerDiv.appendChild(player);
+	};
+    </script>
 
 
 <!-- About Section -->
@@ -196,8 +211,15 @@
     <hr style="width:320px" class="w3-opacity">
 </div>
 </br>
-
-
+</br>
+</br>
+<div class="w3-content w3-justify w3-text-grey w3-padding-64" id="random_player2" style="text-align:center">
+    <h2 class="w3-text-light-grey">Overwatch Cinematic</h2>
+    <hr style="width:320px" class="w3-opacity">
+</div>
+</br>
+</br>
+</br>
 
 <div class="w3-content w3-justify" style="text-align:center">
 <h3>Thanks~</h3>
