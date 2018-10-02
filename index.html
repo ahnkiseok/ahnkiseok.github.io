@@ -81,15 +81,15 @@
         window.onload = function () {
             var playerDiv2 = document.getElementById("random_player2");
             var player2 = document.createElement("IFRAME");
-            var randomVideoUrl2 = videos2[Math.floor(Math.random() * videos2.length)];
+            var randomVideoUrl2 = videos[Math.floor(Math.random() * videos.length)];
             player2.setAttribute('width', '320');
 	    player2.setAttribute('height', '240');
-            player2.setAttribute('src', randomVideoUrl2);
+            player2.setAttribute('src', randomVideoUrl);
 	    player2.setAttribute('autoplay', '0');
 	    player2.setAttribute('shuffle', '1');
 	    player2.setAttribute('frameborder', '0');
 	    player2.setAttribute('allow', 'autoplay');
-	    playerDiv2.appendChild(player2);
+	    playerDiv2.appendChild(player);
 	};
     </script>
 
