@@ -77,11 +77,11 @@
     </script>
 
     <script>
-        var videos = ["https://www.youtube.com/embed/videoseries?list=PLscC141oNgAtAku-v8dGPH16GOH0FIs1o"];
+        var videos2 = ["https://www.youtube.com/embed/videoseries?list=PLscC141oNgAtAku-v8dGPH16GOH0FIs1o"];
         window.onload = function () {
             var playerDiv2 = document.getElementById("random_player2");
             var player2 = document.createElement("IFRAME");
-            var randomVideoUrl2 = videos[Math.floor(Math.random() * videos.length)];
+            var randomVideoUrl2 = videos2[Math.floor(Math.random() * videos2.length)];
             player2.setAttribute('width', '320');
 	    player2.setAttribute('height', '240');
             player2.setAttribute('src', randomVideoUrl2);
