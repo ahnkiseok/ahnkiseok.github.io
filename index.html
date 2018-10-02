@@ -63,20 +63,17 @@
     <script>
         var videos = ["https://www.youtube.com/embed/videoseries?list=PLscC141oNgAtWOZnQil-3RIgjTwbl6QHs", "https://www.youtube.com/embed/videoseries?list=PLscC141oNgAsmiabfvalPYPc0121Op7iK", "https://www.youtube.com/embed/videoseries?list=PLscC141oNgAvqviJsf9fJNwMNs-E51ixL"];
         window.onload = function () {
-            var playerDiv = document.getElementById("random_player");
-            var player = document.createElement("IFRAME");
-            var randomVideoUrl = videos[Math.floor(Math.random() * videos.length)];
-            player.setAttribute('width', '480');
-	    player.setAttribute('height', '270');
-            player.setAttribute('src', randomVideoUrl);
-	    player.setAttribute('autoplay', '0');
-	    player.setAttribute('shuffle', '1');
-	    player.setAttribute('frameborder', '0');
-	    player.setAttribute('allow', 'autoplay');
-	    playerDiv.appendChild(player);
+        var playerDiv = document.getElementById("random_player");
+        var player = document.createElement("IFRAME");
+        var randomVideoUrl = videos[Math.floor(Math.random() * videos.length)];
+        player.setAttribute('src', randomVideoUrl);
+	player.setAttribute('autoplay', '0');
+	player.setAttribute('shuffle', '1');
+	player.setAttribute('frameborder', '0');
+	player.setAttribute('allow', 'autoplay');
+	playerDiv.appendChild(player);
 	};
     </script>
-
 	 
 
 <!-- About Section -->
