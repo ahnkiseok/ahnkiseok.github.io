@@ -1,6 +1,6 @@
 .asciinema-theme-aks .asciinema-terminal {
   color: #c7ea1a;                    /* default text color */
-  background-color: #272822;         /* terminal background color */
+  background-color: #000000;         /* terminal background color */
   border-color: #272822;
 }
 .asciinema-theme-aks .fg-bg {    /* inverse for default text color */
